@@ -1,0 +1,8 @@
+terminal:
+mosquitto
+
+publisher:
+mosquitto_pub -m "hello again" -t "test"
+
+subscriber:
+mosquitto_sub -t "test"
